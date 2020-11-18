@@ -1,0 +1,186 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	width: 70%;
+	margin: 0 auto;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+}
+
+/******************************************
+/* Header Menü
+/*******************************************/
+.topheader {
+    display: block;
+    text-align: center;
+    height: 100px;
+    margin: 1em;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #7f8cf8, white);
+}
+
+img, h1, h4 {
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+img {
+	max-height: 100%;
+}
+
+
+
+footer {
+    clear: both;
+    padding-top: 100px;
+
+
+}
+
+/******************************************
+/* Navigation Menü
+/*******************************************/
+.navlist {
+    margin: -10px;
+    text-align: center;
+}
+
+.navitems {
+    display: inline-block;
+    font-size: 25px;
+    background: rgba(127, 140, 248, 0.18);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.select {
+    background: #7f8cf8;
+    color: white;
+}
+
+.navitems:hover, a:hover {
+    background: #7f8cf8;
+    color: white;
+}
+
+nav {
+    margin-bottom: 100px;
+}
+
+
+
+
+/*Main Content*/
+.mainContent {
+    clear: both;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/*Articles*/
+article {
+    border: 2px solid black;
+    float: left;
+    width: 49%;
+    height: 200px;
+    color: white;
+}
+.Article1 {
+    margin-top: 50px;
+    background-image: url("images/windwos10installation.jpg");
+}
+.Article2 {
+    margin-top: 50px;
+    background-image: url("images/software.jpg");
+}
+.Article3 {
+    margin-top: 50px;
+    background-image: url("images/MagentaWebmail.png");
+}
+.Article4 {
+    margin-top: 50px;
+    background-image: url("images/MagentaWebmail.jpg");
+
+}
+p {
+    font-size: 30px;
+    padding: 80px 0 0 20px;
+}
+span {
+    font-size: 15px;
+}
+
+
+
+
+
+/*BACKGROUNDS*/
+body.index {
+    min-height: 1000px;
+    background-image: url("images/technikhilfe-background.jpg");
+    background-size: auto;
+}
+body.technikhilfe {
+    min-height: 1000px;
+    background-image: url("images/technikhilfe-background.jpg");
+    background-size: auto;
+}
+body.finance {
+    min-height: 1000px;
+    background-image: url("images/finance-background.jpg");
+    background-size: auto;
+}
+body.crypto {
+    min-height: 1000px;
+    background-image: url("images/crypto-background.jpg");
+    background-size: auto;
+}
+body.ueber-mich {
+    min-height: 1000px;
+    background-image: url("images/ueber-mich-background.jpg");
+    background-size: auto;
+}
+body.contact {
+    min-height: 1000px;
+    background-image: url("images/contact-background.jpg");
+    background-size: auto;
+}
+
+
