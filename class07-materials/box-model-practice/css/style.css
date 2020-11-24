@@ -1,0 +1,25 @@
+h1 {
+    padding: 20px 20px 20px 0;
+    margin-top: 20px;
+    background-color: lightpink;
+    color: lightblue;
+}
+
+h2 {
+    padding: 50px 0;
+    border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+    background: orange;
+}
+
+section {
+    border: thick solid blue;
+    height: 300px;
+    margin-top: 450px;
+}
+
+spans {
+    border: thin solid yellow;
+    padding: 10px;
+    margin: 10px;
+}

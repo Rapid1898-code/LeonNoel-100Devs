@@ -1,0 +1,254 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: white;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+     color: white;
+     text-decoration: none;
+}
+
+/******************************************
+/* Header
+/*******************************************/
+nav {
+     background: #1a2130;
+     height: 50px;
+     padding: 0;
+     margin: 0;
+}
+
+nav > img {
+     float: left;
+}
+
+nav > ul > * {
+     float: right;
+}
+
+nav > ul > li > a {
+     margin-left: 20px;
+}
+
+/*nav > ul > li:first-child {*/
+/*     margin-left: 750px;*/
+/*}*/
+
+nav > ul > li:first-child > a {
+     background: #3b414f;
+     padding: 5px;
+}
+
+
+/******************************************
+/* Main
+/*******************************************/
+main {
+     background: #1a2130;
+     height: 350px;
+}
+
+main > * {
+     float: left;
+     width: 50%;
+}
+
+.div1 {
+     background: #dee0e9;
+     height: 250px;
+     margin: 20px;
+     border: 30px solid white;
+     border-radius: 10px;
+}
+
+main img {
+     display: block;
+     margin: 0 auto;
+     margin-top: 3%;
+}
+
+main > section > .firstAnchor {
+     background: white;
+     color: black;
+     margin: 5px;
+     padding: 5px;
+}
+
+
+/******************************************
+/* Section1
+/*******************************************/
+.section1 {
+     background: #f8f8fa;
+     height: 600px;
+}
+
+.section1 > .sec1Head > a > * {
+     display: block;
+     float: right;
+     margin-right: 1%;
+}
+
+.section1 > .sec1Main {
+     float: left;
+     width: 50%;
+
+}
+
+.section1 > .sec1Main > section {
+     float: left;
+     width: 50%;
+}
+
+.section1 > * {
+     color: black;
+}
+
+.section1 > .sec1Main > a {
+     background: black;
+     color: white;
+     margin: 5px;
+     padding: 5px;
+}
+
+.sec1Main > section > img {
+     display: block;
+     margin: 0 auto;
+}
+
+.sec1Main > section > h4, .sec1Main > section > span {
+     display: block;
+     text-align: center;
+     background: white;
+     padding: 0;
+     margin: 0 0 0 63px;
+     width: 188px;
+}
+
+
+/******************************************
+/* Section2
+/*******************************************/
+.section2 {
+     background: #f8f8fa;
+     height: 400px;
+}
+
+.section2 > * {
+     float: left;
+     width: 50%;
+}
+
+.section2 > * {
+     color: black;
+}
+
+.section2 > section > a {
+     background: black;
+     color: white;
+     margin: 5px;
+     padding: 5px;
+}
+
+.section2 > section > div {
+     background: #dee0e9;
+     height: 200px;
+     margin: 0 0 0 150px;
+     width: 60%;
+
+}
+
+.section2 img {
+     display: block;
+     margin: 0 auto;
+     padding: 6%;
+}
+
+
+/******************************************
+/* Section3
+/*******************************************/
+.section3 {
+     background: #f8f8fa;
+     height: 700px;
+     border: 1px solid #f8f8fa;
+}
+
+.section3 > section + section > * {
+     float: left;
+     width: 50%;
+}
+
+.section3 div {
+     background: #dee0e9;
+     height: 200px;
+     margin: 0 0 0 150px;
+     width: 60%;
+}
+
+.section3 img {
+     display: block;
+     margin: 0 auto;
+     padding: 6%;
+}
+
+.section3 > section > * {
+     color: black;
+}
+
+.section3 > section:first-child > * {
+     display: block;
+     text-align: center;
+}
+
+.innerBox {
+     float: left;
+     width: 50%;
+}
+
+.section3 img {
+     float: left;
+}
+
+.section3 > a {
+     background: yellow;
+     color: white;
+     margin: 5px;
+     padding: 5px;
+     display: block;
+     text-align: center;
+}
+
+.section3 > span, .section3 > h4 {
+     color:black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
