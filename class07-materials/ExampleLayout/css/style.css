@@ -1,0 +1,271 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 40px;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+
+}
+
+/******************************************
+/* NAVBAR
+/*******************************************/
+nav {
+  /*padding-top: 10px;*/
+}
+
+nav > *,
+nav li {
+  display: inline-block;
+  font-weight: bold;
+  /*padding: 0 2%;*/
+}
+
+nav > * {
+  /*padding: 0 3%;*/
+  width: 12%;
+  border: 2px solid pink;
+}
+
+nav ul {
+  width: 60%;
+  border: 2px solid red;
+}
+
+nav span {
+  /*margin-left: 0px;*/
+}
+
+nav input {
+  margin-left: 3.2%;
+}
+
+/******************************************
+/* HEADER NEWS
+/*******************************************/
+
+.headerNews {
+  width: 100%;
+  height: 40px;
+}
+
+.headerNews * {
+  padding-top: 3%;
+  font-size: 2em;
+}
+
+.headerNews h1 {
+  float: left;
+  margin-left: 3%;
+}
+
+.headerNews h2 {
+  text-align: right;
+  margin-right: 6%;
+  font-size: 1.5em;
+  color: rgba(102, 102, 102, 0.692);
+  font-weight: bold;
+}
+
+/******************************************
+/* MAIN - CONTENT
+/*******************************************/
+
+.content {
+  clear: both;
+  width: 100%;
+  margin-top: 4%;
+}
+
+.mainContent {
+  position: relative;
+  text-align: center;
+  float: left;
+  width: 55%;
+  margin-right: -2%;
+}
+
+.mainContent img {
+  height: 360px;
+  width: 90%;
+}
+
+.mainContent h2,
+.mainContent p,
+.mainContent h3 {
+  position: absolute;
+  color: white;
+}
+
+.mainContent h2 {
+  top: 60%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+
+.mainContent p {
+  top: 69%;
+  left: 8%;
+}
+
+.mainContent h3 {
+  top: 85%;
+  left: 8%;
+  padding-left: 5px;
+  border-left: 5px solid red;
+}
+
+/******************************************
+/* SIDE - CONTENT
+/*******************************************/
+
+.sideContent {
+  width: 47%;
+  float: left;
+}
+
+.sideContent section {
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 44%;
+}
+
+.sideContent img {
+  height: 175px;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.sideContent h2,
+.sideContent h3 {
+  position: absolute;
+  color: white;
+}
+
+.sideContent h2 {
+  top: 62%;
+  left: 21%;
+  transform: translate(-50%, -50%);
+}
+
+.sideContent h3 {
+  top: 80%;
+  left: 8%;
+  padding-left: 5px;
+  border-left: 5px solid gold;
+}
+
+.sideContent > section,
+.sideContent > section + section {
+  margin-bottom: 5px;
+}
+
+/******************************************
+/* NEWS
+/*******************************************/
+
+.contentNews {
+  clear: both;
+  width: 100%;
+  height: 40%;
+}
+
+.blockNews {
+  padding-top: 2%;
+}
+
+.contentNews h2 {
+  margin-left: 2.7%;
+  padding-left: 10px;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.red {
+  border-left: 3px solid red;
+}
+
+.gold {
+  border-left: 3px solid gold;
+}
+
+
+/******************************************
+/* LATEST-NEWS
+/*******************************************/
+
+.latestNews {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.latestNews section {
+  float: left;
+  width: 31%;
+  padding: 0 10px;
+}
+
+.latestNews section:first-child {
+  margin-left: 2%;
+}
+
+.latestNews img {
+  height: 300px;
+  width: 100%;
+}
+
+.latestNews h2,
+.latestNews p {
+  padding-top: 2%;
+}
+
+.latestNews h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.latestNews p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.latestNews h3 {
+  padding-left: 3%;
+  border-left: 2px solid red;
+}
+

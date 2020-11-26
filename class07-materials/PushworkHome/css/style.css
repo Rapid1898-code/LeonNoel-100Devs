@@ -42,6 +42,7 @@ nav {
      height: 50px;
      padding: 0;
      margin: 0;
+     border: 2px solid black;
 }
 
 nav > img {
@@ -118,7 +119,6 @@ main > section > .firstAnchor {
 .section1 > .sec1Main {
      float: left;
      width: 50%;
-
 }
 
 .section1 > .sec1Main > section {
@@ -147,7 +147,7 @@ main > section > .firstAnchor {
      text-align: center;
      background: white;
      padding: 0;
-     margin: 0 0 0 63px;
+     margin: 0 0 0 30%;
      width: 188px;
 }
 
@@ -179,15 +179,18 @@ main > section > .firstAnchor {
 .section2 > section > div {
      background: #dee0e9;
      height: 200px;
-     margin: 0 0 0 150px;
+     margin: 50px 0 0 150px;
      width: 60%;
+}
 
+.section2 > section > h4 {
+     margin: 50px 0 0 0;
 }
 
 .section2 img {
      display: block;
      margin: 0 auto;
-     padding: 6%;
+     padding: 4%;
 }
 
 
@@ -215,7 +218,7 @@ main > section > .firstAnchor {
 .section3 img {
      display: block;
      margin: 0 auto;
-     padding: 6%;
+     padding: 4%;
 }
 
 .section3 > section > * {
@@ -227,27 +230,143 @@ main > section > .firstAnchor {
      text-align: center;
 }
 
-.innerBox {
+.innerBoxCol1 {
      float: left;
-     width: 50%;
+     width: 20%;
 }
 
-.section3 img {
+.innerBoxCol2 {
+     float: left;
+     width: 80%;
+}
+
+.innerBox > *, .section3 > section > section > img  {
      float: left;
 }
 
 .section3 > a {
-     background: yellow;
+     clear: both;
+     background: black;
      color: white;
-     margin: 5px;
+     width: 10%;
+     margin-left: 45%;
      padding: 5px;
      display: block;
      text-align: center;
 }
 
 .section3 > span, .section3 > h4 {
+     display:block;
      color:black;
 }
+
+
+/******************************************
+/* Section4
+/*******************************************/
+.section4 {
+     background: black;
+     height: 1000px;
+}
+
+.section4 > section {
+     display: inline;
+     float: left;
+     background: white;
+     border-radius: 20px;
+     width: 30%;
+     margin: 25px 50px;
+}
+
+.section4 h4, .section4 p {
+     color: black;
+     padding: 0 10px;
+}
+
+.section4 img {
+     padding: 20px 10px;
+}
+
+
+/******************************************
+/* Section5
+/*******************************************/
+.section5 {
+     background: white;
+     height: 400px;
+     color: black;
+     text-align: center;
+}
+
+.section5 > section {
+     float: left;
+     width: 80%;
+}
+
+.section5 > .image {
+     width: 10%;
+     margin-top: 4%;
+}
+
+
+/******************************************
+/* Section6
+/*******************************************/
+.section6 {
+     background-color: black;
+     color: white;
+     height: 200px;
+     padding: 2%;
+}
+.section6 > section {
+     float:left;
+     width: 60%;
+     padding-left: 20%;
+}
+.section6 > a {
+     float: left;
+     /*display: block;*/
+     width: 10%;
+     margin: 2% 1% 2% 1%;
+     padding: 10px;
+     text-align: center;
+}
+.section6 > a:first-of-type {
+     margin-left: 75px;
+     background-color: #323642;
+     color: #d2d4da;
+}
+.section6 > a:last-of-type {
+     background-color: #edeff4;
+     color: #181c27;
+}
+.section6 h4 {
+     color: #696f7c;
+}
+
+
+/******************************************
+/* Footer
+/*******************************************/
+footer {
+     background: white;
+     color: #abb3bd;
+}
+footer > section {
+     float:left;
+     width: 16%;
+     padding: 2%;
+}
+footer span {
+     display: block;
+}
+footer h4 {
+     color: black;
+}
+.noTitle > span:first-of-type {
+     margin-top: 50px;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
