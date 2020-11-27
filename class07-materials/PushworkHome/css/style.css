@@ -34,6 +34,11 @@ a {
      text-decoration: none;
 }
 
+.start {
+     color: black;
+     text-align: center;
+}
+
 /******************************************
 /* Header
 /*******************************************/
