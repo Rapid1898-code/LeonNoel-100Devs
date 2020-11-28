@@ -41,6 +41,9 @@ span {
 input, button {
      height: 3rem;
 }
+i {
+     font-size: 2rem;
+}
 
 /******************************************
 /* Header
@@ -51,14 +54,18 @@ header {
      height: 40rem;
      background: url("../images/restaurant/backgroundRestaurant.png");
      background-size: cover;
+     padding: 2rem;
 }
 header li {
+     font-weight: bold;
      display: inline-block;
      list-style: none;
-     padding: 1%;
+     padding: 0 1rem;
 }
-header li:first-of-type {
-     margin-left: 65%;
+header ul {
+     float: right;
+     padding: 0;
+     margin: 0;
 }
 header a {
      text-decoration: none;
@@ -75,15 +82,20 @@ header button {
      width: 15%;
      background-color: #ff8800;
      color: white;
+     font-weight: bold;
      border: #f1f6f9;
      border-radius: 0.5rem;
 }
 header h1, header div {
+     clear: both;
      width: 50%;
      margin: 2% 10%;
 }
 header h1 {
      margin-top: 5%;
+}
+header i {
+     margin: 0 1rem;
 }
 
 
@@ -93,13 +105,15 @@ header h1 {
 .section1 {
      background: url("../images/restaurant/backgroundRest2.png");
      background-size: cover;
-     height: 40rem;
+     padding: 2rem;
+     height: 100%;
 }
 .section1 span {
      display: block;
      margin-top: 5rem;
      margin-left: 50%;
      color: #ff8800;
+     font-weight: bold;
 }
 .section1 h2, .section1 p, .section1 button {
      margin-left: 50%;
@@ -109,6 +123,7 @@ header h1 {
      width: 8%;
      background-color: #ff8800;
      color: white;
+     font-weight: bold;
      border: white;
      border-radius: 0.5rem;
 }
@@ -131,6 +146,7 @@ header h1 {
      text-align: center;
      color: #ff8800;
      padding-top: 5rem;
+     font-weight: bold;
 }
 .section2 h2 {
      display: block;
@@ -143,6 +159,7 @@ header h1 {
      padding: 1rem;
      border-bottom: 0.1rem solid grey;
      margin: 0;
+     font-weight: bold;
 }
 .section2 li:first-of-type {
      border-bottom: 0.1rem solid #ff8800;
@@ -159,12 +176,17 @@ header h1 {
 .section2 a.first {
      color: #ff8800;
 }
-.section2 > div, .section2 > img {
+.section2 > div {
      float: left;
      width: 20%;
      margin: 2.5%;
      height: 50%;
-
+}
+.section2 > img{
+     float: left;
+     width: 20%;
+     margin: 2.5%;
+     max-height: 50%;
 }
 .section2 div span, .section2 div img, .section2 div button {
      display: block;
@@ -189,7 +211,9 @@ header h1 {
      font-size: 1.5rem;
      height: 10%;
 }
-
+.section2 .smallScreen {
+     display: none;
+}
 
 /******************************************
 /* Section3
@@ -202,7 +226,7 @@ header h1 {
      float: left;
      width: 20%;
      margin: 2.5%;
-     height: 100%;
+     max-height: 100%;
 }
 .section3 div {
      text-align: center;
@@ -226,6 +250,7 @@ header h1 {
      color: #ff8800;
      padding-top: 5rem;
      margin-top: 15rem;
+     font-weight: bold;
 }
 .section4 h2, .section4 > img, .section4 > span {
      display: block;
@@ -239,9 +264,6 @@ header h1 {
 .section4 > div:last-of-type {
      width: 100%;
      text-align: center;
-}
-.section4 > img {
-     margin-top: 2rem;
 }
 .section4 > span + span {
      font-size: 3rem;
@@ -258,13 +280,41 @@ header h1 {
 .section4 > div > span:first-of-type {
      font-size: 2rem;
 }
-.Video {
+.section4 .Video {
      margin: 3rem;
 }
-.Video > img {
+.section4 .Video > img {
      margin: 10rem;
      margin-bottom: 20rem;
 }
+.section4 .Video > video {
+     width: 800px;
+}
+.section4 > i {
+     display: block;
+     font-size: 3rem;
+     text-align: center;
+     color: orange;
+}
+.section4 > .Video > video {
+     float: left;
+     width: 50%;
+}
+.section4 > .Video > i {
+     float: left;
+     width: 20%;
+     font-size: 3rem;
+     color: orange;
+     padding-top: 13%;
+}
+.section4 > .Video > i:first-of-type {
+     padding-left: 10%;
+}
+.section4 > .Video > i:last-of-type {
+     padding-right: 10%;
+}
+
+
 
 
 /******************************************
@@ -288,6 +338,7 @@ footer p {
 footer span:first-of-type {
      color: #ff8800;
      padding-top: 10rem;
+     font-weight: bold;
 }
 footer h2 {
      margin-top: 1rem;
@@ -300,15 +351,149 @@ footer .name {
 
 }
 
-
-
-
-
-
-
-
-
-
 /******************************************
-/* ADDITIONAL STYLES
+/* Media Screen
 /*******************************************/
+@media screen and (min-width: 600px) and (max-width: 900px){
+     /* Section 1 */
+     .section1 button {
+          width: 10%;
+          height: 2rem;
+     }
+     .section1 h2, .section1 p, .section1 button {
+          margin-left: 70%;
+          margin-right: 5%;
+     }
+
+      /* Section 2 */
+     .section2 div span {
+          color: white;
+          font-size: 2rem;
+          padding: 0.5rem;
+     }
+     .section2 > div > img, .section2 > div > img + span {
+          display: none;
+     }
+     .section2 .bigScreen {
+          display: none;
+     }
+     .section2 .smallScreen {
+          display: block;
+          width: auto;
+          height: auto;
+     }
+     .section2 > div {
+          height: 17.5rem;
+     }
+     .section2 {
+          height: 35rem;
+     }
+
+     /* Section 3 */
+     .section3 {
+          height: auto;
+     }
+
+      /* Section 4 */
+     .section4 {
+          height: 60rem;
+     }
+     .Video > video {
+          width: 350px;
+     }
+     .section4 > span + span {
+          font-size: 2rem;
+     }
+     .section4 > div > span {
+          font-size: 2rem;
+          margin-left: 20%;
+     }
+     .section4 > div > span:first-of-type {
+          font-size: 1.5rem;
+     }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+     /* Header */
+     header li {
+          display: inline-block;
+          list-style: none;
+          padding: 0 0.3rem;
+     }
+     header button {
+          width: 30%;
+     }
+     header a {
+          font-size: 1.5rem;
+     }
+
+     /* Section 1 */
+     .section1 button {
+          width: 20%;
+          height: auto;
+     }
+     .section1 h2, .section1 p {
+          margin-left: 10%;
+          margin-right: 10%;
+     }
+     .section1 button{
+          display: grid;
+          margin: auto;
+     }
+     .section1 span {
+          margin: 0;
+          text-align: center;
+     }
+
+     /* Section 2 */
+     .section2 div span {
+          color: white;
+          font-size: 2rem;
+          padding: 0.5rem;
+     }
+     .section2 > div > img, .section2 > div > img + span {
+          display: none;
+     }
+     .section2 .bigScreen {
+          display: none;
+     }
+     .section2 .smallScreen {
+          display: block;
+          width: auto;
+          height: auto;
+     }
+     .section2 > div {
+          height: 11rem;
+     }
+     .section2 {
+          height: 35rem;
+     }
+
+     /* Section 3 */
+     .section3 {
+          height: auto;
+     }
+
+     /* Section 4 */
+     .section4 {
+          height: 50rem;
+     }
+     .Video > video {
+          width: 350px;
+     }
+     .section4 > span + span {
+          font-size: 2rem;
+     }
+     .section4 > div > span {
+          font-size: 2rem;
+          margin-left: 20%;
+     }
+     .section4 > div > span:first-of-type {
+          font-size: 1.5rem;
+     }
+}
+
+

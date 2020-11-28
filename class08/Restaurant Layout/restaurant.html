@@ -11,6 +11,7 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/restaurant.css">
+		<script src="https://kit.fontawesome.com/bf5e040b82.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
@@ -21,13 +22,13 @@
 					<li><a href="#">Menu</a></li>
 					<li><a href="#">Blog</a></li>
 					<li><a href="#">Location</a></li>
-					<img class="upperPic" src="images/restaurant/shoppingcart.png">
-					<img class="upperPic" src="images/restaurant/glass.png">
+					<i class="fas fa-shopping-cart"></i>
+					<i class="fas fa-search"></i>
+<!--					<li><img class="upperPic" src="images/restaurant/shoppingcart.png"></li>-->
+<!--					<li><img class="upperPic" src="images/restaurant/glass.png"></li>-->
 				</ul>
 				<h1>Welcome To Our Cuisine Restaurant</h1>
 				<div class="search">
-<!--					<input type="search" id="search" name="search">-->
-<!--					<input type="Location">-->
 					<input type="text" placeholder="Search here" name="search2">
 					<button type="submit">Location</button>
 				</div>
@@ -63,7 +64,8 @@
 				<span>$14.99</span>
 				<img src="images/restaurant/stars.png">
 				<span>Contadina</span>
-				<button type="submit">Discover Menu</button>
+				<button class="bigScreen" type="submit">Discover Menu</button>
+				<button class="smallScreen" type="submit">Menu</button>
 			</div>
 			<img src="images/restaurant/meal2.png">
 			<img src="images/restaurant/meal3.png">
@@ -88,7 +90,8 @@
 		<section class="section4">
 			<span>Order Online Now</span>
 			<h2>Opening Hours</h2>
-			<img src="images/restaurant/phone.png">
+			<i class="fas fa-phone-alt"></i>
+<!--			<img src="images/restaurant/phone.png">-->
 			<span>Call Now</span>
 			<span>+12345 678 910</span>
 			<div>
@@ -100,12 +103,14 @@
 				<span>11:00 am - 20:00 pm</span>
 			</div>
 			<div class="Video">
-				<img src="images/restaurant/left.png">
-				<video width="800" controls>
-					<source src="videos/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+				<i class="far fa-arrow-alt-circle-left"></i>
+<!--				<img src="images/restaurant/left.png">-->
+				<video controls>
+					<source src="videos/restaurant/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
 					Your browser does not support HTML video.
 				</video>
-				<img src="images/restaurant/rigth.png">
+				<i class="far fa-arrow-alt-circle-right"></i>
+<!--				<img src="images/restaurant/rigth.png">-->
 			</div>
 		</section>
 
