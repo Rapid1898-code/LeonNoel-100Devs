@@ -65,9 +65,14 @@ span{
      display: block;
      padding: 1rem;
      margin-top: -3rem;
-     margin-bottom: 1rem;
+     margin-bottom: 0.5rem;
+     color: black;
+}
+.underContruction {
      color: red;
 }
+
+
 
 @media screen and (max-width: 60rem) {
      img {

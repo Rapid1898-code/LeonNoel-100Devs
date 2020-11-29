@@ -103,7 +103,7 @@ header i {
 /* Section1
 /*******************************************/
 .section1 {
-     background: url("../images/restaurant/backgroundRest2.png");
+     background: url("../../class08/Restaurant Layout/images/restaurant/backgroundRest2.png");
      background-size: cover;
      padding: 2rem;
      height: 100%;
@@ -137,14 +137,18 @@ header i {
      color: black;
      height: 70rem;
 }
-.section2 > div {
-     background: url("../images/restaurant/meal2.png");
-     background-size: cover;
-     border: 2px solid red;
+.section2 div {
+     position: relative;
      float: left;
      width: 20%;
      margin: 2.5%;
      height: 50%;
+}
+.section2 div div {
+     clear: both;
+     position: absolute;
+     top: 0%;
+     width: 100%;
 }
 .section2 > span{
      display: block;
@@ -181,18 +185,18 @@ header i {
 .section2 a.first {
      color: #ff8800;
 }
-.section2 > img{
-     float: left;
-     width: 20%;
-     margin: 2.5%;
-     max-height: 50%;
+.section2 > div > img{
+     width: 100%;
 }
-.section2 div span, .section2 div img, .section2 div button {
+.section2 > div > .firstPic {
+     filter: brightness(40%);
+}
+.section2 div div span, .section2 > div > div > img, .section2 div div button {
      display: block;
      text-align: center;
-     margin: auto;
+     margin: 0 auto;
 }
-.section2 div span {
+.section2 div div span {
      color: white;
      font-size: 3rem;
      padding: 2rem;
@@ -208,7 +212,8 @@ header i {
      border-radius: 0.5rem;
      padding: 1rem;
      font-size: 1.5rem;
-     height: 10%;
+     height: 20%;
+     font-weight: bold;
 }
 .section2 .smallScreen {
      display: none;
@@ -239,7 +244,7 @@ header i {
 .section4 {
      height: 90rem;
      background-color: #ffffff;
-     background-image: url("../images/restaurant/backgroundCups.jpg");
+     background-image: url("../../class08/Restaurant Layout/images/restaurant/backgroundCups.jpg");
      background-size: cover;
      color: black;
 }
@@ -353,7 +358,7 @@ footer .name {
 /******************************************
 /* Media Screen
 /*******************************************/
-@media screen and (min-width: 600px) and (max-width: 900px){
+@media screen and (min-width: 600px) and (max-width: 1200px){
      /* Section 1 */
      .section1 button {
           width: 10%;
@@ -365,12 +370,12 @@ footer .name {
      }
 
       /* Section 2 */
-     .section2 div span {
+     .section2 div div span {
           color: white;
           font-size: 2rem;
           padding: 0.5rem;
      }
-     .section2 > div > img, .section2 > div > img + span {
+     .section2 > div > > div > img, .section2 > div > div > img + span {
           display: none;
      }
      .section2 .bigScreen {
@@ -447,13 +452,13 @@ footer .name {
           text-align: center;
      }
 
-     /* Section 2 */
-     .section2 div span {
+      /*Section 2 */
+     .section2 div div span {
           color: white;
-          font-size: 2rem;
+          font-size: 1.5rem;
           padding: 0.5rem;
      }
-     .section2 > div > img, .section2 > div > img + span {
+     .section2 > div > div > img, .section2 > div > div > img + span {
           display: none;
      }
      .section2 .bigScreen {
@@ -464,12 +469,16 @@ footer .name {
           width: auto;
           height: auto;
      }
-     .section2 > div {
+     .section2 > div > div {
           height: 11rem;
      }
      .section2 {
           height: 35rem;
      }
+     .section2 div button {
+          padding: 0.5rem;
+     }
+
 
      /* Section 3 */
      .section3 {
