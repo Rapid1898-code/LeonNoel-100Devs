@@ -21,9 +21,54 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
+.section2 {
+     background-color: #f1f6f9;
+     color: black;
+     height: 600px;
+}
+.section2 div{
+     position: relative;
+     float: left;
+     width: 20%;
+     margin: 2.5%;
+     max-height: 50%;
+}
+.section2 > div > img {
+     width: 100%;
+     border: 2px solid red;
+}
+.section2 div div {
+     clear: both;
+     position: absolute;
+     top: 10%;
+     width: 100%;
+}
+
+.section2 div div span, .section2 div div button, .section2 > div > div > img {
+     display: block;
+     margin: 0 auto;
+     text-align: center;
+     /*border: 2px solid red;*/
+}
+.section2 div div span {
+     color: white;
+     font-size: 2rem;
+     padding: 1rem;
 
 }
+.section2 div button {
+     width: 50%;
+     background-color: #ff8800;
+     color: white;
+     border: white;
+     border-radius: 0.5rem;
+     padding: 1rem;
+     font-size: 1.5rem;
+     height: 10%;
+}
+
+
+
 
 
 /******************************************

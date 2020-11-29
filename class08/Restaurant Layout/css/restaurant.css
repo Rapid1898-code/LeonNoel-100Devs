@@ -140,6 +140,11 @@ header i {
 .section2 > div {
      background: url("../images/restaurant/meal2.png");
      background-size: cover;
+     border: 2px solid red;
+     float: left;
+     width: 20%;
+     margin: 2.5%;
+     height: 50%;
 }
 .section2 > span{
      display: block;
@@ -175,12 +180,6 @@ header i {
 }
 .section2 a.first {
      color: #ff8800;
-}
-.section2 > div {
-     float: left;
-     width: 20%;
-     margin: 2.5%;
-     height: 50%;
 }
 .section2 > img{
      float: left;
