@@ -25,6 +25,8 @@ html {
 /* BASE STYLES
 /*******************************************/
 body {
+     color: black;
+     background-color: white;
 }
 h1 {
      font-size: 5rem;
@@ -51,7 +53,6 @@ i {
 header {
      background-color: white;
      color: black;
-     height: 1.5rem;
 }
 header > img, header ul {
      display: block;
@@ -59,27 +60,28 @@ header > img, header ul {
 }
 header > img {
      margin: 0;
+     width: 5%;
 }
 header > ul {
-     width: 85%;
+     width: 80%;
      text-align: center;
      margin: 0;
-     padding: 1rem 0;
+     padding: 10px 0;
 }
 header > span {
-     width: 10%;
+     width: 15%;
 }
 header span {
      display: block;
      float: right;
      text-transform: uppercase;
      color: black;
-     padding: 1rem 1rem;
+     padding: 10px 10px;
 }
 header ul li {
      list-style: none;
      display: inline-block;
-     padding: 0 1rem;
+     padding: 0 10px;
 }
 header ul li a {
      text-decoration: none;
@@ -95,39 +97,232 @@ main {
      background-color: #ab9c9b;
      height: 80rem;
      background-image: url("../images/hairdresser/backgroundUpper.png");
-     background-size: 75%;
+     background-size: contain;
      background-repeat: no-repeat;
      background-position: right;
+     border: 0.1px solid white;
 }
 main > h1, main > p {
      color: white;
-     margin-left: 50rem;
-     padding-top: 3rem;
+     margin-left: 25%;
+     padding-top: 30px;
+}
+main a, main h1, main p, main span {
+     text-transform: uppercase;
 }
 main .topBox a {
      background-color: black;
-     padding: 1rem;
+     padding: 15px;
      color: white;
      text-decoration: none;
-     margin-left: 50rem;
+     font-size: 1rem;
+     margin-left: 25%;
+     margin-top: 300px;
 }
 main .bottomBox {
      background-color: black;
      width: 25%;
-     margin-top: 10rem;
-     margin-left: 50rem;
-     height: 25%;
+     margin-top: 75px;
+     margin-left: 25%;
+     border: 0.1px solid black;
+     /*height: 25%;*/
+}
+main .bottomBox > span {
+     padding-top: 10px;
+     display: inline-block;
 }
 main .bottomBox > * {
      color: white;
-     margin: 3rem;
+     margin: 30px;
 }
 main .bottomBox a {
      background-color: white;
-     padding: 1rem;
+     padding: 15px;
      color: black;
      text-decoration: none;
+     font-size: 1rem;
+     display: inline-block;
 }
+main .bottomBox p span {
+     font-size: 4rem;
+}
+
+
+/******************************************
+/* Section 1
+/*******************************************/
+.section1 {
+     height: 500px;
+}
+.section1 section {
+     float: left;
+     width: 33%;
+}
+.section1 > section > * {
+     text-align: center;
+}
+.section1 h2, .section1 p {
+     padding: 0 15%;
+}
+.section1 img {
+     padding: 0 45%;
+     margin-top: 50px;
+}
+.section1 h2 {
+     text-transform: uppercase;
+}
+
+
+/******************************************
+/* Section 2
+/*******************************************/
+.section2 {
+     height: 350px;
+     background-color: #f3f4f6;
+}
+.section2 section {
+     float: left;
+     width: 45%;
+}
+.section2 section:last-of-type {
+     padding: 40px;
+}
+.section2 > video {
+     width: 800px;
+}
+.section2 > section > * {
+     /*margin: 50px 20%;*/
+}
+.section2 > section:first-of-type > * {
+     margin: 30px 5% 30px 45%;
+}
+.section2 a {
+     background-color: black;
+     padding: 1rem;
+     color: white;
+     text-decoration: none;
+}
+.section2 h2 {
+     text-transform: uppercase;
+     margin-top: 70px;
+}
+
+
+/******************************************
+/* Section 3
+/*******************************************/
+.section3 {
+     height: 450px;
+     margin: 5% 20%;
+}
+.section3 section {
+     float: left;
+     width: 33%;
+}
+.section3 div {
+     /*margin: 0 10%;*/
+}
+.section3 span {
+     position: relative;
+     display: block;
+     margin: 0 20%;
+     background-color: black;
+     padding: 1rem;
+     color: white;
+     text-align: center;
+     bottom: 30px;
+}
+.section3 > section > div > span:first-child {
+     text-transform: uppercase;
+}
+
+/******************************************
+/* Section 4
+/*******************************************/
+.section4 {
+     height: 350px;
+     background-color: #f2f2f3;
+     margin:0 30%;
+}
+.section4 section {
+     float: left;
+     width: 50%;
+}
+.section4 > section > * {
+     text-transform: uppercase;
+     margin: 0 15%;
+}
+.section4 > section:first-child > * {
+     margin: 35px 0%;
+     margin-left: 3%;
+}
+.section4 > section:first-child {
+     margin-top: 30px;
+}
+.section4 a {
+     background-color: black;
+     padding: 1rem;
+     color: white;
+     text-decoration: none;
+     font-size: 1rem;
+}
+.section4 img {
+     /*height: 60%;*/
+}
+.section4 h3 > span {
+     font-size: 4rem;
+     font-weight: bold;
+}
+.section4 h3 {
+     font-size: 1.5rem;
+}
+
+
+/******************************************
+/* Section 5
+/*******************************************/
+.section5 {
+     height: 800px;
+     margin:0 30%;
+}
+.section5 h2 {
+     text-align: center;
+     margin: 0;
+}
+.section5 h2:first-of-type {
+     margin-top: 75px;
+}
+.section5 section {
+     float: left;
+     width: 33%;
+}
+.section5 img {
+     padding: 5px;
+     width: 100%;
+}
+.firstUneven {
+     height: 250px;
+}
+.secondUneven {
+     height: 500px;
+}
+.firstEven {
+     height: 500px;
+}
+.secondEven {
+     height: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

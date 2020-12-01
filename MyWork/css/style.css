@@ -54,7 +54,7 @@ section {
      float: left;
      text-align: center;
      width: 48%;
-     border: 2px solid black;
+     /*border: 2px solid black;*/
      border-radius: 5rem;
      padding: 0px;
      height: 40rem;
