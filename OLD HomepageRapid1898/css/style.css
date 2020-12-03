@@ -1,0 +1,217 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+}
+
+/******************************************
+/* Header Menue
+/*******************************************/
+header {
+    position: sticky;
+    top: 1rem;
+}
+
+.topheader {
+    display: block;
+    text-align: center;
+    height: 10rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom, #7f8cf8, white);
+}
+
+.headerImage, .headerTitle, .headerSubTitle {
+    display: inline-block;
+    padding: 0 5rem;
+    vertical-align: top;
+}
+
+.headerTitle {
+    font-size: 7rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    color: black;
+}
+
+.headerSubTitle {
+    font-size: 2rem;
+    color:black;
+}
+
+.headerImage {
+	max-height: 100%;
+
+}
+
+footer {
+    clear: both;
+    padding-top: 100px;
+
+
+}
+
+/******************************************
+/* Navigation Menue
+/*******************************************/
+.navlist {
+    margin: -1rem 1rem;
+    text-align: center;
+    background-color: white;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.navitems {
+    display: inline-block;
+    font-size: 2.5rem;
+    background: rgb(200, 206, 252);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.navitems:hover {
+    background: #7f8cf8;
+}
+.navlink {
+    text-decoration: none;
+    color: gray;
+}
+.navlink:hover {
+    color:white;
+}
+.select {
+    background: #7f8cf8;
+    color: white;
+}
+nav {
+    margin-bottom: 10rem;
+}
+
+
+/*******************************************/
+/*Main Content*/
+/*******************************************/
+.mainContent {
+    text-align: center;
+}
+li {
+    list-style-type: none;
+}
+h2 {
+    font-size: 5rem;
+}
+.headerSubTitle {
+    font-size: 2rem;
+    color:black;
+}
+h4 {
+    font-size: 2rem;
+}
+.textNormal {
+    font-size: 2rem;
+    width: 50%;
+    margin: 5rem auto;
+    text-align: left;
+}
+ul.textNormal {
+    text-align: center;
+}
+
+
+/*******************************************/
+/*Articles*/
+/*******************************************/
+.flexSection {
+    width: 70%;
+	margin: 5rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 50rem;
+    height: 20rem;
+    color: white;
+    flex: 1;
+}
+.Article1 {
+    background-image: url("images/windwos10installation.jpg");
+}
+.Article2 {
+    background-image: url("images/software.jpg");
+}
+.Article3 {
+    background-image: url("images/MagentaWebmail2.png");
+}
+.Article4 {
+    background-image: url("images/FVD-Speed-Dial.png");
+}
+.textArticle {
+    font-size: 3rem;
+    padding: 8rem 0 0 3rem;
+}
+.spanArticle {
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem 0 0 3rem;
+}
+a {
+    text-decoration: none;
+}
+
+
+/*BACKGROUNDS*/
+body.index {
+    min-height: 1000px;
+    background-image: url("images/technikhilfe-background.jpg");
+    background-size: auto;
+}
+body.technikhilfe {
+    min-height: 1000px;
+    background-image: url("images/technikhilfe-background.jpg");
+    background-size: auto;
+}
+body.finance {
+    min-height: 1000px;
+    background-image: url("images/finance-background.jpg");
+    background-size: auto;
+}
+body.crypto {
+    min-height: 1000px;
+    background-image: url("images/crypto-background.jpg");
+    background-size: auto;
+}
+body.ueber-mich {
+    min-height: 1000px;
+    background-image: url("images/ueber-mich-background.jpg");
+    background-size: auto;
+}
+body.contact {
+    min-height: 1000px;
+    background-image: url("images/contact-background.jpg");
+    background-size: auto;
+}
