@@ -1,0 +1,35 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/**********/
+
+section {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border: 2px solid black;
+}
+#idBlue {
+  background-color: blue;
+}
+#idGreen {
+  background-color: green;
+}
+#idRed {
+  background-color: red;
+}
