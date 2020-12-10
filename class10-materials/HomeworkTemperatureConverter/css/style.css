@@ -1,0 +1,58 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: #78cee9;
+}
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  color: white;
+  background-color: darkblue;
+}
+input {
+  /*border: 2px solid red;*/
+  border: 1px solid darkblue;
+}
+
+h1 {
+  /*display: inline;*/
+  /*border: 2px solid red;*/
+}
+span {
+  display: inline-block;
+  /*padding-top: 52px;*/
+  margin: 20px;
+  /*border: 2px solid red;*/
+}
+span + span {
+  /*border: 1px solid darkblue;*/
+  min-width: 100px;
+
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
