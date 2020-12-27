@@ -1,0 +1,51 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html {
+  margin: auto 10%;
+}
+
+img, span {
+  float: left;
+  font-size: 3rem;
+  width: 14.5%;
+  padding: 1%;
+  margin: 1%;
+  border: solid 5px black;
+  cursor: pointer;
+}
+img:hover, span:hover {
+  transform: scale(0.90);}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 10px;
+}
+.enter {
+  clear: both;
+  padding-top: 25px;
+}
+span {
+  text-align: center;
+}
+.selected {
+  background-color: yellow;
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
