@@ -1,0 +1,65 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+body {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 12%;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  font-weight: 400;
+  background-color: #a8dadc ;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.grid-container {
+  display: grid;
+  background-color: #457b9d;
+  padding: 10px;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: center;
+  border-radius: 20px;
+}
+.grid-item {
+  background-color: #a9d6e5;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  width: 100px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.grid-item:hover {
+  transform: scale(1.10);
+  background-color: #f4a261;
+}
+.inputField {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  background-color: #f0efeb;
+  font-size: 3rem;
+}
+.deleteButton {
+  background-color: #e63946;
+}
+.functionButton {
+  background-color: #90be6d;
+}
+span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.selected {
+  background-color: #f4a261;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,44 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-gap: 10px 50px;
+  justify-content: space-between;
+  align-content: center;
+  height: 500px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.lastItem {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.doubleRow {
+  grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
