@@ -1,0 +1,92 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+html {
+     font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+:root {
+    --base: #06d6a0;
+    --spacing: 10px;
+    --blur: 0px;
+    --width: 50%;
+    --borderWidth: 10px;
+    --borderColor: #ffd166;
+    --brightness: 1.0;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    max-width: var(--width);
+    border-style: solid;
+    border-color: var(--borderColor);
+    border-width: var(--borderWidth);
+    height: auto;
+}
+.hl {
+    color: var(--base);
+}
+.hl2 {
+    color: var(--borderColor);
+}
+
+body {
+  text-align: center;
+  background: #118ab2;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 5rem;
+}
+
+.controls {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+input {
+  width: 100px;
+}
+.inputField input {
+    width: 60%;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.inputField button {
+    background-color: #ef476f;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: 4rem;
+    }
+}

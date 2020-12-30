@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<h2><span class='hl2'>Play</span> with the <span class='hl'>Picture</span> and have fun</h2>
+
+	  <div class="controls">
+	  	<div>
+			<label for="spacing">Spacing:</label>
+			<input id="spacing" type="range" name="spacing" min="0" max="200" value="10" data-sizing="px">
+			<label for="width">Width:</label>
+			<input id="width" type="range" name="width" min="20" max="80" value="60" data-sizing="%">
+		</div>
+		<div>
+			<label for="blur">Blur:</label>
+			<input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+			<label for="base">Base Color</label>
+			<input id="base" type="color" name="base" value="#06d6a0">
+		</div>
+	  	<div>
+			<label for="borderWidth">Border Width:</label>
+			<input id="borderWidth" type="range" name="borderWidth" min="0" max="50" value="10" data-sizing="px">
+			<label for="borderColor">Border Color</label>
+			<input id="borderColor" type="color" name="borderColor" value="#ffd166">
+		</div>
+	  </div>
+	  <div class="inputField">
+		<label for="base">Pic From Url:</label>
+		<input id="inputURL" type="text" name="inputURL" value="URL">
+		<button id="loadButton" type="button" name="button">Load</button>
+	  </div>
+
+
+	  <img id="imgPicture" src="img/sliderPicture.jpeg">
+<!--	  <img class="imgPicture" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">-->
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
