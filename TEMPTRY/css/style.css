@@ -1,0 +1,129 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+    font-size: 62.5%;
+    color: black;
+}
+
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+    background-color: #f1f8ff;
+}
+h1 {
+    font-size: 4rem;
+    color: mediumblue;
+}
+h2 {
+    font-size: 2rem;
+    color: black;
+    line-height: 3rem;
+}
+h4 {
+    font-size: 1rem;
+    color:black;
+}
+p {
+    font-size: 2rem;
+}
+a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+a, a:visited, a:active {
+    color: mediumblue;
+}
+a.select {
+    color: darkgrey;
+}
+a:hover {
+    color: darkgrey;
+}
+li {
+    list-style: none;
+    font-size: 2rem;
+}
+.bold {
+    font-weight: bold;
+}
+
+/******************************************
+/* Header
+/*******************************************/
+header {
+    background: linear-gradient(to bottom, #7f8cf8, #f1f8ff);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+header > .topheader {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+header > .topheader > a {
+    width: 15%;
+}
+header > .topheader > div {
+    margin: 20px;
+    width: 75%;
+}
+header > nav {
+    width: 60%;
+}
+.headerImage {
+	width: 90%;
+    padding: 20px;
+}
+
+.topheader h1, .topheader h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navlist {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin: 10px 0;
+    padding: 0;
+}
+.navlist > li {
+    padding: 0 1.5%;
+}
+.navlist > a {
+    padding: 0 0.5%;
+}
+.navlist a {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+nav img {
+    height: 3rem;
+}
+
+
+
+
+
+
