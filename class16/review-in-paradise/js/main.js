@@ -19,7 +19,7 @@ divideMultiply(5,7,8)
 
 // Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
 function cubeRoot(n1) {
-    let erg = n1 ** 2
+    let erg = Math.cbrt(n1)
     console.log(erg)
 }
 cubeRoot(4)
