@@ -6,3 +6,8 @@ function checkNum(n1) {
     }
 }
 checkNum(50)
+
+arr.forEach((elem,idx) => {						// Iterate through array by elements and index (with shortform)
+	console.log(idx)							// Outputs index
+	console.log(elem)							// Outputs element of array
+})
