@@ -10,20 +10,28 @@ function funcRead() {
         .then(data => {
             console.log(data.drinks)
             for (let i = 0; i < 100; i++) {
-                data.drinks.forEach((elem, idx) => {
-                    setTimeout(() => {
-                        console.log(elem.strDrink)
-                        document.querySelector("h2").innerText = elem.strDrink
-                        document.querySelector("img").src = elem.strDrinkThumb
-                        document.querySelector("h3").innerText = elem.strInstructions
-                    }, idx * 3000);
-                })
+                setTimeout(() => {
+                    data.drinks.forEach((elem, idx) => {
+                        setTimeout(() => {
+                            console.log(elem.strDrink)
+                            document.querySelector("h2").innerText = elem.strDrink
+                            document.querySelector("img").src = elem.strDrinkThumb
+                            document.querySelector("h3").innerText = elem.strInstructions
+                        }, idx * 2000);
+                    })
+                }, i * data.drinks.length * 2000);
             }
         })
         .catch(err => {
             console.log(`error ${err}`)
         });
-
 }
+
+
+
+
+
+
+
 
 
