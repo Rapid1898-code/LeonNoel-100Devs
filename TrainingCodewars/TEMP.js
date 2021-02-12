@@ -1,9 +1,3 @@
-function findNum(numbers) {
-    numbers.forEach((elem,idx) => {
-        if (elem === 2) {
-            return idx
-        }
-    })
-}
-
-console.log(findNum([1,2,3]))
+let arr = [1, 30, 39, 29, 10, 13]
+const isLower = (elem) => elem < 40;
+console.log(arr.every(isLower))
