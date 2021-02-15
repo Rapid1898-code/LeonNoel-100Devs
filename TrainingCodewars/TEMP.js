@@ -1,3 +1,2 @@
-let arr = [1, 30, 39, 29, 10, 13]
-const isLower = (elem) => elem < 40;
-console.log(arr.every(isLower))
+l = ["zone", "abigail", "theta", "form", "libe", "zas"]
+console.log(l.slice(2,4))
