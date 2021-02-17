@@ -1,2 +1,12 @@
-l = ["zone", "abigail", "theta", "form", "libe", "zas"]
-console.log(l.slice(2,4))
+// const delayedHello = () => {
+//   console.log('Hi! This is an asynchronous greeting!');
+// };
+
+function delayedHello () {
+  console.log('Hi! This is an asynchronous greeting!');
+}
+
+
+
+
+setTimeout(delayedHello, 5000);
