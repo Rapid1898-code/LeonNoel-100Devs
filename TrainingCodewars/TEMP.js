@@ -1,12 +1,3 @@
-// const delayedHello = () => {
-//   console.log('Hi! This is an asynchronous greeting!');
-// };
+// window.open('mailto:test@example.com');
 
-function delayedHello () {
-  console.log('Hi! This is an asynchronous greeting!');
-}
-
-
-
-
-setTimeout(delayedHello, 5000);
+window.open('mailto:test@example.com?subject=subject&body=body');
