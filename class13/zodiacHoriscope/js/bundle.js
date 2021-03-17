@@ -72477,7 +72477,7 @@ module.exports = getProxyFromURI
 },{"_process":188}],374:[function(require,module,exports){
 'use strict'
 
-var fs = require('fs')
+var fs = require('fs.js')
 var qs = require('querystring')
 var validate = require('har-validator')
 var extend = require('extend')
