@@ -4,6 +4,8 @@ const MongoClient = require('mongodb').MongoClient
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static('public'))
+app.use(bodyParser.json())
 
 MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useUnifiedTopology: true })
@@ -13,14 +15,26 @@ MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.
     const quotesCollection = db.collection('quotes')
 
     app.get('/', (req, res) => {
-      res.sendFile(__dirname + '/index.html')
+      db.collection('quotes').find().toArray()
+        .then(results => {
+          res.render('index.ejs', { quotes: results })
+        })
+        .catch(error => console.error(error))
     })
 
     app.post('/quotes', (req, res) => {
       quotesCollection.insertOne(req.body)
         .then(result => {
-          console.log(result)
+          res.redirect('/')
         })
+        .catch(error => console.error(error))
+    })
+
+    app.put('/quotes', (req, res) => {
+      quotesCollection.findOneAndUpdate(/* ... */)
+        .then(result => {
+          console.log(result)
+         })
         .catch(error => console.error(error))
     })
   })
@@ -33,11 +47,7 @@ app.listen(3000, function() {
 
 // app.get('/', (req, res) => {
 //   res.send('Hello World')
-// })
-
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
-})
+//)
 
 // app.post('/quotes', (req, res) => {
 //   console.log('Hellooooooooooooooooo!')
