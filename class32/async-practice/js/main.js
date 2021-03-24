@@ -12,12 +12,12 @@
 // houseTwo()
 // houseThree()
 
-// Code 02
+//Code 02
 function houseOne(){
     console.log('Paper delivered to house 1')
 }
 function houseTwo(){
-    setTimeout(() => console.log('Paper delivered to house 2'), 3000)
+    setTimeout(() => console.log('Paper delivered to house 2'), 0)
 }
 function houseThree(){
     console.log('Paper delivered to house 3')
