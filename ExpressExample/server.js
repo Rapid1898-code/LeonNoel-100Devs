@@ -8,6 +8,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json())
 
 MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+// MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
