@@ -3,7 +3,6 @@ const passport = require('passport')
 const config = require('../config/config')
 const router = express.Router()
 
-
 router.get('/login',
   function(req, res, next) {
     passport.authenticate('azuread-openidconnect', 
