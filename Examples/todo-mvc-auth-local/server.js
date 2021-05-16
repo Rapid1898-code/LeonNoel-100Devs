@@ -22,13 +22,13 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(logger('dev'))
-// Sessions
+// Sessions             // more or less copy-paste
 app.use(
     session({
       secret: 'keyboard cat',
       resave: false,
       saveUninitialized: false,
-      store: new MongoStore({ mongooseConnection: mongoose.connection }),
+      store: new MongoStore({ mongooseConnection: mongoose.connection }),     // session will be stored in the mongoDB
     })
   )
   

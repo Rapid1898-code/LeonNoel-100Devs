@@ -46,6 +46,37 @@ connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan,
 
 ---
  
+# Folder Structure
+#### config:
+* .env: Store the secret keys for database, port, cloud_name, api-keys,...
+* database.js: connect to mongo-db
+* passport.js: passport informations (mostly copied from passport docu)
+#### controllers (the "C" from MVC)
+* auth.js: all the logic for authentification (getLogin, postLogin, logout, getSignup, postSignup)
+* home.js: home Index
+* todo.js: all the logic for the todos (getTodos,createTodo,markComplete,markIncomplete,deleteTodo)
+#### middleware
+* auth.js: not 100% sure what this is...
+#### models (the "M" from MVC)
+* todo.js: mongoose todo schema for the todos (in the db)
+* user.js: mongoose user schema for the todos (in the db)
+#### node_modules
+* all the installed node-modules - install with npm install
+#### public
+* css / style.css: css formating for the ejs-files
+* js /main.js: js client code (eventListeners for delete,complete,incomplete todos - at every element in the todo-list)
+<br> functions are triggering the deleteTodo / markComplete / markIncomplete with fetches
+#### routes: connects the CRUD-commands to the Controllers and show where they are
+* main.js: routes for home / login / signup
+* todo.js: routes for todos (get/, post/createTodo, put/markComplete, put/markIncomplete,delete/deleteTodo)
+  
+ 
+
+
+
+ 
+ 
+ 
  Have fun testing and improving it! 😎
 
 

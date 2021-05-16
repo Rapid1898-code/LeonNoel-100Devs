@@ -56,6 +56,7 @@ const User = require('../models/User')
   
   exports.postSignup = (req, res, next) => {
     const validationErrors = []
+    // Validation if all the provided mail and password informations are valid
     if (!validator.isEmail(req.body.email)) validationErrors.push({ msg: 'Please enter a valid email address.' })
     if (!validator.isLength(req.body.password, { min: 8 })) validationErrors.push({ msg: 'Password must be at least 8 characters long' })
     if (req.body.password !== req.body.confirmPassword) validationErrors.push({ msg: 'Passwords do not match' })
@@ -72,6 +73,7 @@ const User = require('../models/User')
       password: req.body.password
     })
   
+    // check if user allready exists with email OR username
     User.findOne({$or: [
       {email: req.body.email},
       {userName: req.body.userName}

@@ -1,4 +1,4 @@
-const LocalStrategy = require('passport-local').Strategy
+const LocalStrategy = require('passport-local').Strategy        // everything copied more or less from the passport docuementation
 const mongoose = require('mongoose')
 const User = require('../models/User')
 
