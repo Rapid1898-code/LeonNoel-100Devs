@@ -47,36 +47,48 @@ connect-mongo, dotenv, ejs, express, express-session, mongodb, mongoose, morgan,
 ---
  
 # Folder Structure
+#### root
+* gitignore: ignored files for git  
+(node_modules cause they are to big!, .env cause they are secret)
+* package-lock.json: not 100% sure what this is for
+* package.json: installed npm node packages
+* README.md: you see it here...  
+* server.js: all required modules, basic configuraton of express with app, passport config and middleware
+
 #### config:
 * .env: Store the secret keys for database, port, cloud_name, api-keys,...
 * database.js: connect to mongo-db
 * passport.js: passport informations (mostly copied from passport docu)
 #### controllers (the "C" from MVC)
+the core of the backend-logic - what to do when somehing is triggered in frontend
 * auth.js: all the logic for authentification (getLogin, postLogin, logout, getSignup, postSignup)
 * home.js: home Index
 * todo.js: all the logic for the todos (getTodos,createTodo,markComplete,markIncomplete,deleteTodo)
 #### middleware
 * auth.js: not 100% sure what this is...
 #### models (the "M" from MVC)
+define the fixed schemas which are used in the db (type, key/required)
 * todo.js: mongoose todo schema for the todos (in the db)
-* user.js: mongoose user schema for the todos (in the db)
+* user.js: mongoose user schema for the todos (in the db) (with hashing and salting the password)
 #### node_modules
-* all the installed node-modules - install with npm install
+all the installed node-modules - install with npm install
 #### public
+css and frontend-js can be used without linking in the ejs/html-file
 * css / style.css: css formating for the ejs-files
 * js /main.js: js client code (eventListeners for delete,complete,incomplete todos - at every element in the todo-list)
 <br> functions are triggering the deleteTodo / markComplete / markIncomplete with fetches
-#### routes: connects the CRUD-commands to the Controllers and show where they are
+#### routes: 
+connects the CRUD-commands to the Controllers and show where they are
 * main.js: routes for home / login / signup
 * todo.js: routes for todos (get/, post/createTodo, put/markComplete, put/markIncomplete,delete/deleteTodo)
-  
- 
+#### views (the "V" from MVC)
+the frontend-files html/ejs what the user can see
+use ejs for dynamic homepages-content
+* index.ejs: start site with creating new todo-list with login/signup
+* login.ejs: login site (with email and password entry)
+* signup.ejs: signup site (with username,email,password,confirmPW)
+* todos.ejs: todo site (dynamic todo-list from db, input-fields for new todos)
 
-
-
- 
- 
- 
  Have fun testing and improving it! 😎
 
 
