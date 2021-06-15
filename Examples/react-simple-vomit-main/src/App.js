@@ -9,7 +9,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header backColor="green" width="50%"></Header>
+        <Header backColor="green" width="75%"></Header>
+        <Header backColor="lightgreen" width="55%"></Header>
         <SectionMain></SectionMain>
         <Aside></Aside>
         <Footer></Footer>
