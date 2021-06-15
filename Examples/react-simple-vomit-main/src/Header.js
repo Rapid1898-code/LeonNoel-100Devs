@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 
+// component with prop - definition class based
 class Header extends Component {
   render() {
     const style = {

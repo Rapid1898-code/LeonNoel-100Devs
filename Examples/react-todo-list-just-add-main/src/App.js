@@ -1,10 +1,14 @@
+// import all components / files which are used
 import { useState } from 'react'
 import Header from "./components/Header";
 import List from "./components/List"
 import AddTodo from "./components/AddTodo"
 
+// using the useState-hook
+// todos => is the actual state (an array with 3 objects)
+// setTodos => is the end-state
+// useState => is the defined initial state with which it get started
 function App() {
-
   const [todos, setTodos] = useState([
     {
       id: 1,
@@ -26,6 +30,9 @@ function App() {
     setTodos([...todos, newTodo])
   }
 
+  // Different components following
+  // for Header: passing in a prop-Title for the component
+  // for List: passing in a todos-Object - see above - in the component
   return (
     <div className="container">
       <Header title="Todo List" />
