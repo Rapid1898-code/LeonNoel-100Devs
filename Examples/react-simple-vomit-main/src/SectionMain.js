@@ -1,3 +1,4 @@
+// same as Footer.js
 import React, { Component } from 'react';
 import './SectionMain.css';
 
