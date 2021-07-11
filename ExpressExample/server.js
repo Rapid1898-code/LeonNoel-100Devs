@@ -7,12 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 app.use(bodyParser.json())
 
-<<<<<<< HEAD
-MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
-// MongoClient.connect("mongodb+srv://Rapid1898:I65faueI65f@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
-=======
 MongoClient.connect("mongodb+srv://ReadMongo:81468146@cluster0.ram23.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
->>>>>>> 72565886cfcc896ce9b102da926632832ddbb7e5
   useUnifiedTopology: true })
   .then(client => {
     console.log('Connected to Database')
